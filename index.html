@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Unternehmen</title>
+    <!--
+      Dies ist die Hauptseite Ihrer Firmenwebsite.  Sie besteht vollständig aus
+      statischem HTML und nutzt eine kleine JavaScript-Datei, um zusätzliche
+      Beiträge aus dem Verzeichnis `posts` zu laden.  Um einen neuen Post
+      hinzuzufügen, legen Sie einfach eine weitere HTML‑Datei im Ordner
+      `posts` ab (z.B. `posts/neuigkeit.html`).  Diese wird beim Laden
+      automatisch eingebunden.
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="banner">
+        <h1>Mein Unternehmen</h1>
+        <p class="tagline">Innovation und Qualität aus einer Hand</p>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="intro" class="section">
+            <h2>Willkommen</h2>
+            <p>
+                Willkommen auf unserer Firmenwebseite. Unser Ziel ist es, Ihnen
+                hochwertige Produkte und Dienstleistungen zu bieten.  Diese
+                Webseite wurde komplett mit statischem HTML erstellt und nutzt
+                eine kleine JavaScript‑Funktion, um neue Beiträge aus dem
+                Verzeichnis <code>posts/</code> dynamisch einzufügen.  Fügen
+                Sie einfach neue HTML‑Dateien in dieses Verzeichnis ein, und
+                sie erscheinen automatisch auf dieser Seite.
+            </p>
+        </section>
+        <section id="posts" class="section">
+            <h2>Neuigkeiten &amp; Beiträge</h2>
+            <div id="posts-container">
+                <!-- Dynamisch geladene Posts werden hier eingefügt -->
+            </div>
+            <noscript>
+                <p>Bitte aktivieren Sie JavaScript, um die Beiträge zu sehen.</p>
+            </noscript>
+        </section>
+        <section id="kontakt" class="section">
+            <h2>Kontakt</h2>
+            <p>
+                Sie haben Fragen oder wünschen weitere Informationen?  Kontaktieren
+                Sie uns gern per E‑Mail unter
+                <a href="mailto:info@example.com">info@example.com</a>.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mein Unternehmen – Alle Rechte vorbehalten.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
